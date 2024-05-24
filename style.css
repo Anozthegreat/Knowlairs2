@@ -9,9 +9,9 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #bda4a4;
+    color: #171616;
 }
 
 /* Container */
@@ -23,7 +23,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 25%;
-    background-color: #333;
+    background-color: #282424;
     color: #fff;
     padding: 20px;
     position: fixed;
@@ -47,6 +47,10 @@ body {
     text-decoration: none;
     color: #fff;
     padding-bottom: 10px;
+    transition: 500ms;
+}
+.sidebar h3 a:hover{
+    color: chartreuse;
 }
 .sidebar h4{
     text-align: center;
@@ -64,6 +68,7 @@ body {
     color: #fff;
     padding-bottom: 10px;
     font-size: 3em;
+    text-align: center;
 }
 .sidebar p {
     margin-bottom: 20px;
@@ -88,13 +93,21 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-
 .sidebar button:hover {
     background-color: #666;
 }
 .hidden {
     display: none;
 }
+.categories button a{
+    text-decoration: none;
+    color: #fff;
+}
+.categoriess button a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Main Content */
 .main-content {
     margin-left: 25%;
@@ -103,17 +116,15 @@ body {
 }
 
 .main-content article {
-    background-color: #fff;
+    background-color: #a1dba2;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0.9, 0.9, 0.9, 0.9);
     border-radius: 20px;
 }
-
 .main-content h1 {
     margin-bottom: 10px;
 }
-
 .main-content p {
     line-height: 1.6;
 }
@@ -125,7 +136,7 @@ body {
 .main-content p1 a{
     text-decoration: none;
     color: rgb(55, 0, 255);
-    border: #ffffff solid;
+    border: #a1dba2 solid;
     transition: 0.5s;
     border-radius: 20px;
 }
@@ -138,7 +149,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
-/* Responsive Design */
+    /* Mobile Friendly */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -153,6 +165,7 @@ body {
     }
     .sidebar p3{
         margin-left: 60px;
+        text-align: center;
     }
     .sidebar h2,h3{
         text-align: center;
@@ -167,7 +180,9 @@ body {
     .sidebar img{
         display: none;
     }
-
+    .categoriess{
+        display: none;
+    }
     .main-content {
         margin-left: 0;
         width: 100%;
